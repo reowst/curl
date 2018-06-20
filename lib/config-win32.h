@@ -558,14 +558,13 @@
 #  ifndef WINVER
 #    define WINVER VS2012_DEF_TARGET
 #  endif
-#  if (_WIN32_WINNT < VS2012_MIN_TARGET) || (WINVER < VS2012_MIN_TARGET)
-#    if defined(_USING_V110_SDK71_)
-#      error VS2012 does not support Windows build targets prior to Windows XP
-#    else
-#      error VS2012 does not support Windows build targets prior to Windows \
-Vista
-#    endif
-#  endif
+//#  if (_WIN32_WINNT < VS2012_MIN_TARGET) || (WINVER < VS2012_MIN_TARGET)
+//#    if defined(_USING_V110_SDK71_)
+//#      error VS2012 does not support Windows build targets prior to Windows XP
+//#    else
+//#      error VS2012 does not support Windows build targets prior to Windows Vista
+//#    endif
+//#  endif
 #endif
 
 /* When no build target is specified Pelles C 5.00 and later default build
